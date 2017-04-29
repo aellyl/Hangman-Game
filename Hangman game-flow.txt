@@ -1,0 +1,37 @@
+Hangman game object:
+score: win, loss
+number of tries
+guessing word
+array of already guessed characters
+
+action:
+get guessing word
+check guess letter is in the word
+
+
+
+
+flow:
+pre user's interaction:
+set scores and number of tries
+get guess letter
+
+user interaction:
+user enters a letter
+check if letter is already guessed-
+	yes: do nothing
+	else:
+	store that letter to guessed letter array
+
+	check user's letter against the word-
+	yes: display the guess letter on the word 
+	no: 
+		decrement number of tried
+		update hangman picture
+
+check if number of tries is out-
+	yes: make a dead sound
+	no: keep letting user enter a letter
+
+
+
